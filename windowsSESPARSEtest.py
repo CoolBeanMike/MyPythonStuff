@@ -1,4 +1,6 @@
 #!/usr/bin/python
+
+"""
 #
 # windowsNTFSworkload.py
 #
@@ -18,6 +20,7 @@
 # with the live VM seSparse defragmentation.  Without the tools corruption is possible but (we believe)
 # only as part of a reboot of the guest OS.
 #
+"""
 
 import os
 import sys

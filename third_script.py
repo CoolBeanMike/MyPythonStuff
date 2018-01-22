@@ -6,4 +6,3 @@ else:
 
 x = input("enter stuff: ")
 print(x)
-
