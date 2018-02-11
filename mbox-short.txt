@@ -1,3 +1,4 @@
+
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 Return-Path: <postmaster@collab.sakaiproject.org>
 Received: from murder (mail.umich.edu [141.211.14.90])
@@ -18,7 +19,7 @@ Received: from paploo.uhi.ac.uk (localhost [127.0.0.1])
 	Sat,  5 Jan 2008 14:10:05 +0000 (GMT)
 Message-ID: <200801051412.m05ECIaH010327@nakamura.uits.iupui.edu>
 Mime-Version: 1.0
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: 8bit
 Received: from prod.collab.uhi.ac.uk ([194.35.219.182])
           by paploo.uhi.ac.uk (JAMES SMTP Server 2.1.3) with SMTP ID 899
           for <source@collab.sakaiproject.org>;
@@ -305,7 +306,7 @@ Content-Type: text/plain; charset=UTF-8
 X-DSPAM-Result: Innocent
 X-DSPAM-Processed: Fri Jan  4 15:03:18 2008
 X-DSPAM-Confidence: 0.7626
-X-DSPAM-Probability: 0.0000
+X-DSPAM-Probability: 0.0001
 
 Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39766
 
