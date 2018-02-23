@@ -10,4 +10,12 @@ Hint: make sure not to include the lines that start with 'From:'.
 
 You can download the sample data at http://www.py4e.com/code3/mbox-short.txt
 """
-
+fname = input('Enter file name: ')
+address = open(fname)
+count = 0
+for line in address:
+    if line.startswith('From ') is True:
+        x = (line.split())
+        print(x[1])
+        count = count + 1
+print('There were ' + str(count) + ' lines in the file with From as the first word')
