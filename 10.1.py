@@ -11,15 +11,23 @@ for key, val in counts.items():
     lst.append(newtup)
 
 lst = sorted(lst, reverse=True)
-
 for val, key in lst[:10]:
     print(val, key)
 
+x = ['f', 'd', 'c']
+
+print(x.index('d'))
+x.reverse()
+print(x)
+
+x = {'x': 1, 'y': 3}
+print(x)
 
 
-"""
+
 x = ('red', 'blue', 'green', '1', '2', '7')
 
+"""
 print(x)
 print(x[2])
 print(max(x))
