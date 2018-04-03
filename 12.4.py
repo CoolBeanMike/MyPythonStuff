@@ -51,8 +51,10 @@ soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all tag contents
 tags = soup('span')
+print(tags)
 for tag in tags:
     # Look at the parts of a tag
+    print(tag)
     total = int(tag.contents[0]) + total
 
 print(total)
