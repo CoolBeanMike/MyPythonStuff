@@ -24,7 +24,7 @@ html = urlopen(url, context=ctx).read()
 soup = BeautifulSoup(html, "html.parser")
 
 # Retrieve all of the anchor tags
-tags = soup('a')
+tags = soup('s')
 for tag in tags:
     # Look at the parts of a tag
     print('TAG:', tag)
