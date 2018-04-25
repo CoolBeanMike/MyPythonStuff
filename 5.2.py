@@ -19,7 +19,7 @@ print('done')
 
 
 largest_so_far = -1
-for the_num in [9, 41, 12, 3, 74, 15, 10, 34, 765, 9797]:
+for the_num in [9, 41, 2828282, 12, 3, 74, 15, 10, 34, 765, 9797]:
     if the_num > largest_so_far:
         largest_so_far = the_num
         print("largest number so far is: ", largest_so_far)
