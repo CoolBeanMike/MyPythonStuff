@@ -15,7 +15,9 @@ Each student will have a distinct data url for the assignment - so only use your
 import json
 import urllib.request
 
-url = input("Please type in a URL: ")
+#url = input("Please type in a URL: ")
+url = "http://py4e-data.dr-chuck.net/comments_42.json "
+
 print('Retrieving', url)
 
 uh = urllib.request.urlopen(url)
@@ -29,6 +31,7 @@ print(info["comments"])
 
 for item in info["comments"]:
     print(item['count'])
+    print(item['name'])
     sum1 = sum1 + item['count']
 
 print(sum1)

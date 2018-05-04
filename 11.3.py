@@ -12,6 +12,7 @@ file = open("regex_sum_62808.txt")
 for line in file:
     line = line.rstrip()
     stuff = re.findall('[0-9]+', line)
+    print(stuff)
     newlist.append(stuff)
 
 # creating a list of only present strings

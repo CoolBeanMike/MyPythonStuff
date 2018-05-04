@@ -26,3 +26,4 @@ for word in date:
 
 for key, val in sorted(counts.items()):
     print(key, val)
+

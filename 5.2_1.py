@@ -14,6 +14,7 @@ smallest = None
 while True:
     try:
         num = input("Enter a number: ")
+
         if num == "done":
             print("Maximum is", largest)
             print("Minimum is", smallest)

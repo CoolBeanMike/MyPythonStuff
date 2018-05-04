@@ -7,23 +7,34 @@ number catch it with a try/except and put out an appropriate message and ignore 
 
 Enter 7, 2, bob, 10, and 4 and match the output below.
 """
+import pdb
+
 
 largest = None
 smallest = None
-cool1 = int(2)
-cool2 = int(4)
 
 while True:
     try:
-        number = input("Enter a number: ")
-        if number == "done":
-            print(smallest1)
-            print(largest1)
+        pdb.set_trace()
+        number = int(input("Enter a number: "))
+        if number == 'done':
             break
 
-        smallest1 = int(number) + cool1
-        largest1 = int(number) + cool2
+        if largest is None:
+            largest = number
+
+        elif number > largest:
+            largest = number
+
+        if smallest is None:
+            smallest = number
+        elif smallest < number:
+            number = smallest
+
 
     except Exception as e:
         print("Enter a real number")
         continue
+
+smallest = int(number)
+largest = int(number)
