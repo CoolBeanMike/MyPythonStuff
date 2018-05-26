@@ -18,3 +18,5 @@ for item in count:
 
 print('Count: ', len(count))
 print('Sum: ', sum1)
+
+
