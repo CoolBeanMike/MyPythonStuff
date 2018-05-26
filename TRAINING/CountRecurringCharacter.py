@@ -30,7 +30,7 @@ def first_recuring_string(str):
             count += 1
             table[char] = count
             print(table)
-            return char, count
+            table.keys(), table.values()
         else:
             count = 1
             table[char] = count
