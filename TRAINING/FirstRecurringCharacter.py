@@ -24,18 +24,11 @@ A               1
 
 def first_recuring_string(str):
     table = {}
-    count = int(0)
     for char in str:
         if char in table:
-            count += 1
-            table[char] = count
-            print(table)
-            return char, count
+            return char
         else:
-            count = 1
-            table[char] = count
-            print(table)
+            table[char] = 1
 
 
-print(first_recuring_string("asccddeee"))
-
+print(first_recuring_string("ascccddeee"))

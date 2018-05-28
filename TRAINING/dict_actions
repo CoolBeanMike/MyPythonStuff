@@ -1,0 +1,29 @@
+#type in words and find repeat ones and count number of words
+counts2 = {}
+line = input("please enter text here:")
+words = line.split()
+print('words', words)
+for word in words:
+    counts2[word] = counts2.get(word, 0) + 1
+print('Counts:', counts2)
+
+
+
+
+for key in counts2:
+    print(key, counts2[key])
+    print(counts2.keys())
+    print(counts2.values())
+    print(counts2.items())
+counts2 = {'sasa': 1, 'red': 3, 'gggg': 67}
+for key, value in counts2.items():
+    print(key, value)
+
+
+
+
+counts2 = dict()
+line = open('\\Users\\mbova\\PycharmProjects\\MyPythonStuff\\PYTHON_CLASS\\mbox-short.txt')
+for x in line:
+    words = x.split()
+    print('words', words)
