@@ -9,7 +9,7 @@ print('Counts:', counts2)
 
 
 
-
+"""
 for key in counts2:
     print(key, counts2[key])
     print(counts2.keys())
@@ -18,7 +18,7 @@ for key in counts2:
 counts2 = {'sasa': 1, 'red': 3, 'gggg': 67}
 for key, value in counts2.items():
     print(key, value)
-
+"""
 
 
 
