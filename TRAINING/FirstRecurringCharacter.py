@@ -27,8 +27,7 @@ def first_recuring_string(str):
     for char in str:
         if char in table:
             return char
-        else:
-            table[char] = 1
+        table[char] = 1
 
 
 print(first_recuring_string("ascccddeee"))
