@@ -22,7 +22,7 @@ for key, value in counts2.items():
 
 
 
-counts2 = dict()
+counts2 = ()
 line = open('\\Users\\mbova\\PycharmProjects\\MyPythonStuff\\PYTHON_CLASS\\mbox-short.txt')
 for x in line:
     words = x.split()
