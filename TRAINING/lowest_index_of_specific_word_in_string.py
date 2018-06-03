@@ -12,3 +12,10 @@ if word is not found return -1
 
 x = "does the cat like to eat grass"
 print(x.find("cat"))
+
+try:
+    if x.find("cat") >= 0:
+        print(x.find("cat"))
+
+except Exception as e:
+    print(-1)

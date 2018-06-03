@@ -22,7 +22,7 @@ A               1
 """
 
 
-def first_recuring_string(str):
+def count_recuring_string(str):
     table = {}
     count = int(1)
     for char in sorted(str):
@@ -30,12 +30,11 @@ def first_recuring_string(str):
             count += 1
             table[char] = count
             print(table)
-            #return char, count
         else:
             count = 1
             table[char] = count
             print(table)
 
 
-print(first_recuring_string("ascccddeee"))
+print(count_recuring_string("ascccddeee"))
 

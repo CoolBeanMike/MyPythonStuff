@@ -5,20 +5,15 @@
 
 """
 
+import collections
 
-def first_non_recuring_string(str):
-    table = {}
-    first = None
-    for char in str:
-        if char in table:
-            second = char
-            if second == first:
-                continue
-            print("The first non occurring char: ", first)
-        table[char] = 1
-        first = char
+def firstUnique(text):
+    counts = collections.defaultdict(int)
+    for letter in text:
+        counts[letter] += 1
+    for letter in text:
+        if counts[letter] == 1:
+            return letter
 
 
-
-
-print(first_non_recuring_string("aabbfa"))
+print(firstUnique("AABBCCCCEXEE"))
