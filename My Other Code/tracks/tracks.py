@@ -40,7 +40,7 @@ if ( len(fname) < 1 ) : fname = 'Library.xml'
 def lookup(d, key):
     found = False
     for child in d:
-        if found : return child.text
+        if found: return child.text
         if child.tag == 'key' and child.text == key :
             found = True
     return None

@@ -1,21 +1,22 @@
-z = []
 x = input("Please input a bunch of word: ")
+y = []
+length = len(x)
+print(length)
+print(list(x))
+len1 = length
 
-y = x.split()
-print(y)
+while len1 > 0:
+    y.append(x[len1-1])
+    len1 -= 1
 
-length = (len(y))
-x = length
-while x > 0:
-    z.append(y[x-1])
-    x -= 1
+print(' '.join(y))
 
-print(' '.join(z))
-
-
+"""
 s = (1,2 ,3 ,5 )
 
 print(set(s))
 print(list(s))
 
 print((tuple(s)))
+
+"""
