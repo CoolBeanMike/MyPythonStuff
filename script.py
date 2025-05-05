@@ -89,19 +89,50 @@ print ("Magic 8-Ball's answer:", fortunes[random_number])
 
 weight = round(float(input("What is the weight of your package: ")),2)
 
-#ground shipping
-
 if weight <= 2:
-    ground_shipping = float(weight*1.50+20)
-    drone_shipping = float(weight*4.50)
-    if ground_shipping < drone_shipping:
-        print ("Ground shipping is the cheapest at a cost of:", ground_shipping)
-    else:
+    ground_shipping = round(float(weight * 1.50 + 20), 2)
+    drone_shipping = round(float(weight * 4.50), 2)
+    premium_shipping = round(float(125), 2)
+    print (ground_shipping, "a", drone_shipping, "a", premium_shipping)
+    if ground_shipping < drone_shipping < premium_shipping:
+        print("Ground shipping is the cheapest at a cost of:", ground_shipping)
+    elif drone_shipping < premium_shipping:
         print ("Drone shipping is the cheapest at a cost of:", drone_shipping)
+    else:
+        print ("Premium shipping is the cheapest at a cost of:", premium_shipping)
 
-elif weight > 2 <= 6:
-    print("The cost to ship your package will be: ", round(weight*9.0, 3))
-elif weight >6 <= 10:
-    print("The cost to ship your package will be: ", round (weight * 12.0 , 3))
-else:
-    print ("The cost to ship your package will be: ", round(weight * 14.25, 3))
+if weight > 2 and weight <= 6:
+    ground_shipping = round(float(weight * 3.00 + 20), 2)
+    drone_shipping = round(float(weight * 9.00), 2)
+    premium_shipping = round(float(125), 2)
+    print (ground_shipping, "b", drone_shipping, "b", premium_shipping)
+    if ground_shipping < drone_shipping < premium_shipping:
+        print("Ground shipping is the cheapest at a cost of:", ground_shipping)
+    elif drone_shipping < premium_shipping:
+        print ("Drone shipping is the cheapest at a cost of:", drone_shipping)
+    else:
+        print ("Premium shipping is the cheapest at a cost of:", premium_shipping)
+
+if weight > 6 and weight <=10:
+    ground_shipping = round(float(weight * 4.00 + 20), 2)
+    drone_shipping = round(float(weight * 12.00), 2)
+    premium_shipping = round(float(125), 2)
+    print (ground_shipping, "c", drone_shipping, "c", premium_shipping)
+    if ground_shipping < drone_shipping < premium_shipping:
+        print("Ground shipping is the cheapest at a cost of:", ground_shipping)
+    elif drone_shipping < premium_shipping:
+        print ("Drone shipping is the cheapest at a cost of:", drone_shipping)
+    else:
+        print ("Premium shipping is the cheapest at a cost of:", premium_shipping)
+
+if weight > 10:
+    ground_shipping = round(float(weight * 4.75 + 20), 2)
+    drone_shipping = round(float(weight * 14.25), 2)
+    premium_shipping = round(float(125), 2)
+    print (ground_shipping, "d", drone_shipping, "d", premium_shipping)
+    if ground_shipping < drone_shipping < premium_shipping:
+        print("Ground shipping is the cheapest at a cost of:", ground_shipping)
+    elif drone_shipping < premium_shipping:
+        print ("Drone shipping is the cheapest at a cost of:", drone_shipping)
+    else:
+        print ("Premium shipping is the cheapest at a cost of:", premium_shipping)
