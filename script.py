@@ -84,7 +84,7 @@ fortunes = ["Yes - definitely", "It is decidedly so", "Without a doubt", "Reply 
 random_number = random.randint(0, 8)
 
 print ("Magic 8-Ball's answer:", fortunes[random_number])
-'''
+
 
 
 weight = round(float(input("What is the weight of your package: ")),2)
@@ -136,3 +136,44 @@ if weight > 10:
         print ("Drone shipping is the cheapest at a cost of:", drone_shipping)
     else:
         print ("Premium shipping is the cheapest at a cost of:", premium_shipping)
+
+x = 0
+while x <= 2:
+    print("red1", x)
+    x += 1
+else:
+    print ("we are done")
+
+
+
+customer_data = [["Ainsley", "Small", True], ["Ben", "Large", False], ["Chani", "Medium", True], ["Depak", "Medium", False]]
+
+print (customer_data)
+
+customer_data[2][2] = False
+
+print (customer_data)
+
+customer_data[1].remove(False)
+print (customer_data)
+
+cool = len(customer_data)
+print(cool)
+
+
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+sorted_cities = cities.sort(reverse=True)
+
+print(sorted_cities)
+
+countdown = 10
+while countdown >= 0:
+  print ("t-minus", countdown)
+  countdown -= 1
+print ("Blast Off")
+'''
+countdown = 10
+while countdown >= 0:
+  print (countdown)
+  countdown -= 1
+
