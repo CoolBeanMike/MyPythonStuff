@@ -39,8 +39,6 @@ my_textarea.click()
 
 sleep(2)
 
-#slider_bar.click_and_hold(slider).move_by_offset(-80,0).release().perform()
-
 actions = ActionChains(driver)
 slider_width = slider.size['width']
 
@@ -55,9 +53,8 @@ while target_value <= max_value:
     steps_to_move = target_value - current_value
     x_offset = steps_to_move * step_width
     actions.click_and_hold(slider).move_by_offset(x_offset,0).release().perform()
-    sleep(2)
+    sleep(1)
     target_value += 1
-    print(target_value)
 
 submit_button.click()
 sleep(2)
