@@ -171,9 +171,161 @@ while countdown >= 0:
   print ("t-minus", countdown)
   countdown -= 1
 print ("Blast Off")
-'''
+
 countdown = 10
 while countdown >= 0:
   print (countdown)
   countdown -= 1
 
+
+countdown = 10
+while countdown >= 1:
+  print ("hello", countdown)
+  countdown -= 1
+
+list1 = ["x", "y"]
+list2 = [1,2,3]
+
+list3 = list1 + list2
+
+print (list3[1])
+
+
+
+x=0
+while x <= 10:
+    print (x, "coolbean",-x)
+    x += 1
+
+
+
+tuple_1 = ("g", 2)
+
+print (tuple_1)
+
+print (tuple_1[1])
+
+
+from time import sleep
+
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+for x in range(3):
+  print (x)
+  print(inventory[x])
+
+inventory_len = len(inventory)
+print (inventory_len)
+
+first = inventory[0]
+print (first)
+
+last = inventory[-1]
+print (last)
+
+inventory_2_6 = inventory[2:6]
+first_3 = inventory[0:3]
+print (first_3)
+
+twin_beds = inventory.count("twin bed")
+print(twin_beds)
+
+removed_item = inventory.pop(4)
+print (inventory)
+print (removed_item)
+
+inventory.insert(10,"19th Century Bed")
+print (inventory)
+
+inventory.sort()
+print (inventory)
+
+inventory = sorted(inventory)
+print(inventory)
+
+count_1 = inventory.count("pillow")
+
+inventory.insert(10, "red")
+
+print (inventory)
+
+list_1 = [2,3,5,6,8,9,4,3,2,4,5,5,4,]
+
+list_1.insert(10,"red")
+
+lenth=len(list_1)
+
+new_list = list_1.insert(4, "cool122")
+
+cool_list=[[1,4], ["red", 45]]
+
+print(lenth)
+print(list_1)
+print(cool_list)
+
+cool_list.insert(1,[1, "four"])
+
+print (cool_list)
+
+list_1 = [1,2,3]
+list_2 = ["red", "blue", "green"]
+
+list_3 = list(zip(list_1, list_2))
+
+print (list_3)
+
+print(list_3[2])
+
+list_1 = [1,2,3]
+list_2 = [5,6,7]
+
+list_3 = list(zip(list_1, list_2))
+
+print (list_3[1], list_3[0])
+
+wow = 10
+while wow >= 0:
+    print ("T-Minus:", wow)
+    #sleep (1)
+    wow -= 1
+print ("blast off")
+
+
+list_1 = [3,5,6,7,8,9,0,8,0]
+index=len(list_1)
+number_1 = 0
+while number_1 < index:
+    print(list_1[number_1])
+    number_1 += 1
+
+my_favorite_numbers = [4, 8, 15, 16, 42]
+
+for number in my_favorite_numbers:
+  red1 = my_favorite_numbers.append(1)
+  print(number)
+  sleep(1)
+'''
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+for dogs in dog_breeds_available_for_adoption:
+    if dogs == dog_breed_I_want:
+        print ("I found my dog:",dogs)
+        break
+
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for numbers in ages:
+  if numbers < 21:
+    continue
+  else:
+    print ("The persons age is:",numbers)
+
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+cost = 0
+for x in sales_data:
+    for y in x:
+        #print(y)
+        int(y)
+        cost = cost + y
+print (cost)
