@@ -304,7 +304,7 @@ for number in my_favorite_numbers:
   red1 = my_favorite_numbers.append(1)
   print(number)
   sleep(1)
-'''
+
 dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
 dog_breed_I_want = "dalmatian"
 
@@ -329,3 +329,11 @@ for x in sales_data:
         int(y)
         cost = cost + y
 print (cost)
+'''
+
+def getSum(A: int, B: int, C: int):
+    print(A + B + C)
+
+print(getSum(1, 2, 3))   # Output: 6
+print(getSum(100, 100, 100))   # Output: 300
+print(getSum(85, 16, 93))   # Output: 194
