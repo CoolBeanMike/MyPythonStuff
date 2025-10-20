@@ -15,7 +15,7 @@
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-'''
+
 list1 = ["w", 1, "t"]
 list2 = ["w", 1, "t"]
 
@@ -329,7 +329,7 @@ for x in sales_data:
         int(y)
         cost = cost + y
 print (cost)
-'''
+
 
 def getSum(A: int, B: int, C: int):
     print(A + B + C)
