@@ -66,16 +66,6 @@ match user_name:
         print("Username not recognized.")
 
 
-x = 0
-
-if x == 0:3
-  print("x is equal to zero")
-elif x >= 0:
-  print("x is greater than zero")
-else:
-  print("x is less than zero")
-
-
 import random
 question = input("What is your question today: ")
 
